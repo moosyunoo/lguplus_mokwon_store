@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>U+ 단골 이벤트</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #fff;
+      color: #000;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #5b2bc2;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.2rem;
+    }
+    #language-selector {
+      padding: 0.4rem;
+      font-size: 1rem;
+    }
+    main {
+      padding: 1rem;
+      text-align: center;
+    }
+    .main-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+    .subtitle {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    .button-container {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .button-container a {
+      text-decoration: none;
+      background-color: #5b2bc2;
+      color: white;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
+    }
+    .guide {
+      margin-top: 2rem;
+      font-size: 1rem;
+      text-align: left;
+    }
+    .footer {
+      background-color: #eee;
+      padding: 1rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="title">U+ 단골 이벤트</h1>
+    <select id="language-selector">
+      <option value="ko">한국어</option>
+      <option value="en">English</option>
+      <option value="vi">Tiếng Việt</option>
+      <option value="ru">Русский</option>
+      <option value="zh">简体中文</option>
+      <option value="ja">日本語</option>
+    </select>
+  </header>
+
+  <main>
+    <div class="main-title" id="main-text">
+      유플러스 단골등록하고 다이소, 메가리카노, 파리바게트 3천원 쿠폰 받자!
+    </div>
+
+    <div class="subtitle" id="sub-text">
+      매 월 통신사 상관없이 누구나<br>유플러스 매장에서 만나는 유익한 혜택
+    </div>
+
+    <div class="button-container">
+      <a id="btn1" href="https://ucrm.lguplus.co.kr/mbl/v2/rcmd/moveInfo?param=d2ludGVyMyYyMDI1MDExNjA1NTYxNyZRUkNEXw==" target="_blank">단골 등록하기</a>
+      <a id="btn2" href="https://www.uplusweek.co.kr/promotion?utm_campign=u24week0&utm_source=experience&utm_medium=storetable_back_qr_non_owend&utm_content=imgexperienceback_fm%20&utm_term=non" target="_blank">유플위크 이벤트 바로가기</a>
+      <a id="btn3" href="https://www.uplusweek.co.kr/" target="_blank">유플위크 홈페이지</a>
+      <a id="btn4" href="https://open.kakao.com/o/skqT8Fph" target="_blank">문의하기 (카카오톡)</a>
+    </div>
+
+    <div class="guide" id="steps">
+      <h3>참여 순서</h3>
+      <ol>
+        <li>유플위크 이벤트 페이지에서 매장 선택 시 반드시 "일반매장 > 대전 > 서구 > 도안목원대점"을 선택해주세요.</li>
+        <li>P코드에는 <strong>P844271</strong>, 직원 이름에는 <strong>문선욱</strong>을 입력해주세요.</li>
+        <li>이벤트 참여 완료 후, <strong>단골 등록</strong>도 함께 진행해주세요.</li>
+      </ol>
+
+      <p><strong>쿠폰 발송 시간:</strong> 매일 오전 10시 ~ 오후 8시</p>
+      <p><strong>매장 주소:</strong> 대전 서구 동서대로 700 FM프라임타워 1층 102호</p>
+      <p><a href="https://naver.me/G1wlkqcu" target="_blank">[네이버 지도] LG유플러스 도안동 목원대점</a></p>
+    </div>
+
+    <div class="footer" id="footer-msg">
+      단골등록, 이벤트 참여 후 <strong>010-8003-4046</strong> 번호로<br>
+      이벤트 참가자 이름을 문자로 보내줘야 쿠폰 발송이 됩니다.
+    </div>
+  </main>
+
+  <script>
+    const translations = {
+      en: {
+        title: "U+ Loyalty Event",
+        main: "Register as a U+ regular and get 3,000 won coupons for Daiso, Mega Americano, Paris Baguette!",
+        sub: "Monthly benefits at U+ stores for everyone, regardless of carrier",
+        btn1: "Register as a Regular",
+        btn2: "Go to U+ Week Event",
+        btn3: "U+ Week Homepage",
+        btn4: "Inquire (KakaoTalk)",
+        steps: `
+          <h3>How to Participate</h3>
+          <ol>
+            <li>Select "General Store > Daejeon > Seo-gu > Doan Mokwon Univ. Branch" on the event page.</li>
+            <li>Enter <strong>P844271</strong> for P-code and <strong>Moon Seonuk</strong> for employee name.</li>
+            <li>Complete regular registration after participating in the event.</li>
+          </ol>
+          <p><strong>Coupon Delivery Time:</strong> 10AM ~ 8PM daily</p>
+          <p><strong>Store Address:</strong> 1F, 700 Dongseo-daero, Seo-gu, Daejeon</p>
+          <p><a href="https://naver.me/G1wlkqcu" target="_blank">[Naver Map] U+ Doan Mokwon Univ. Branch</a></p>
+        `,
+        footer: "After registering and participating, text your name to 010-8003-4046 to receive your coupon."
+      },
+      vi: {
+        title: "Sự kiện khách quen U+",
+        main: "Đăng ký khách quen U+ để nhận phiếu giảm giá 3,000 won tại Daiso, Mega Americano, Paris Baguette!",
+        sub: "Ưu đãi hàng tháng tại cửa hàng U+ cho mọi người bất kể nhà mạng",
+        btn1: "Đăng ký khách quen",
+        btn2: "Đi đến sự kiện U+ Week",
+        btn3: "Trang chủ U+ Week",
+        btn4: "Liên hệ (KakaoTalk)",
+        steps: `
+          <h3>Cách tham gia</h3>
+          <ol>
+            <li>Chọn "Cửa hàng chung > Daejeon > Seo-gu > Doan Mokwon Univ. Branch" trong sự kiện.</li>
+            <li>Nhập mã P <strong>P844271</strong> và tên nhân viên <strong>Moon Seonuk</strong>.</li>
+            <li>Hoàn thành đăng ký khách quen sau khi tham gia.</li>
+          </ol>
+          <p><strong>Thời gian gửi phiếu:</strong> 10h sáng ~ 8h tối hàng ngày</p>
+          <p><strong>Địa chỉ cửa hàng:</strong> 1F, 700 Dongseo-daero, Seo-gu, Daejeon</p>
+          <p><a href="https://naver.me/G1wlkqcu" target="_blank">[Naver Map] Chi nhánh Mokwon Doan</a></p>
+        `,
+        footer: "Sau khi đăng ký, hãy nhắn tên bạn đến 010-8003-4046 để nhận phiếu."
+      },
+      ru: {
+        title: "Событие для постоянных клиентов U+",
+        main: "Зарегистрируйтесь и получите купоны на 3,000 вон от Daiso, Mega Americano, Paris Baguette!",
+        sub: "Ежемесячные выгоды в магазине U+ для всех, независимо от оператора",
+        btn1: "Зарегистрироваться",
+        btn2: "Перейти к событию U+ Week",
+        btn3: "Домашняя страница U+ Week",
+        btn4: "Запрос (KakaoTalk)",
+        steps: `
+          <h3>Как участвовать</h3>
+          <ol>
+            <li>Выберите "Общий магазин > Тэджон > Со-гу > Doan Mokwon" в событии.</li>
+            <li>Введите код <strong>P844271</strong> и имя <strong>Moon Seonuk</strong>.</li>
+            <li>После участия зарегистрируйтесь как постоянный клиент.</li>
+          </ol>
+          <p><strong>Время отправки купонов:</strong> 10:00 ~ 20:00 ежедневно</p>
+          <p><strong>Адрес магазина:</strong> 1F, 700 Dongseo-daero, Seo-gu, Daejeon</p>
+          <p><a href="https://naver.me/G1wlkqcu" target="_blank">[Карта Naver] Магазин Mokwon Doan</a></p>
+        `,
+        footer: "После участия отправьте ваше имя на 010-8003-4046 для получения купона."
+      },
+      zh: {
+        title: "U+ 常客活动",
+        main: "注册 U+ 常客，领取大创、美式咖啡、巴黎贝甜 3,000 韩元优惠券！",
+        sub: "每月在 U+ 门店，任何通信公司用户都可享受优惠",
+        btn1: "注册常客",
+        btn2: "前往 U+ Week 活动",
+        btn3: "U+ Week 首页",
+        btn4: "咨询（KakaoTalk）",
+        steps: `
+          <h3>参与步骤</h3>
+          <ol>
+            <li>在活动页面选择 “一般门店 > 大田 > 西区 > Doan Mokwon Univ. Branch”</li>
+            <li>填写 P 码 <strong>P844271</strong>，员工姓名 <strong>Moon Seonuk</strong></li>
+            <li>完成活动后，请注册常客</li>
+          </ol>
+          <p><strong>优惠券发送时间：</strong> 每天 10:00 至 20:00</p>
+          <p><strong>门店地址：</strong> 大田市西区东西大路700号FM大厦1楼102号</p>
+          <p><a href="https://naver.me/G1wlkqcu" target="_blank">[Naver地图] Doan Mokwon 门店</a></p>
+        `,
+        footer: "请完成注册和活动后，将您的姓名发送至 010-8003-4046，即可领取优惠券。"
+      },
+      ja: {
+        title: "U+ 常連イベント",
+        main: "U+の常連に登録して、ダイソー・メガアメリカーノ・パリバゲットの3,000ウォンクーポンをゲット！",
+        sub: "毎月、通信会社に関係なくU+店舗でお得な特典がもらえる！",
+        btn1: "常連登録する",
+        btn2: "U+ウィークイベントへ",
+        btn3: "U+ウィーク公式サイト",
+        btn4: "問い合わせ (カカオトーク)",
+        steps: `
+          <h3>参加手順</h3>
+          <ol>
+            <li>イベントページで「一般店舗 > テジョン > 西区 > ドアンモクウォン店」を選択してください。</li>
+            <li>Pコードに<strong>P844271</strong>、担当者名に<strong>ムンソヌク</strong>と入力してください。</li>
+            <li>イベント参加後、常連登録も忘れずに！</li>
+          </ol>
+          <p><strong>クーポン配布時間：</strong> 毎日午前10時〜午後8時</p>
+          <p><strong>店舗住所：</strong> テジョン市西区トンソデロ700 FMプライムタワー1階102号</p>
+          <p><a href="https://naver.me/G1wlkqcu" target="_blank">[ネイバーマップ] LGU+ドアンモクウォン店</a></p>
+        `,
+        footer: "常連登録とイベント参加後、名前を010-8003-4046に送ってクーポンをもらおう！"
+      }
+    };
+
+    document.getElementById("language-selector").addEventListener("change", function () {
+      const lang = this.value;
+      if (translations[lang]) {
+        document.getElementById("title").textContent = translations[lang].title;
+        document.getElementById("main-text").textContent = translations[lang].main;
+        document.getElementById("sub-text").textContent = translations[lang].sub;
+        document.getElementById("btn1").textContent = translations[lang].btn1;
+        document.getElementById("btn2").textContent = translations[lang].btn2;
+        document.getElementById("btn3").textContent = translations[lang].btn3;
+        document.getElementById("btn4").textContent = translations[lang].btn4;
+        document.getElementById("steps").innerHTML = translations[lang].steps;
+        document.getElementById("footer-msg").innerHTML = translations[lang].footer;
+      }
+    });
+  </script>
+</body>
+</html>
